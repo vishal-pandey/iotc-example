@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">IotcExample</string>
+    <string name="enter_text">Enter Message</string>
+    <string name="show_the_text">Send</string>
 </resources>
