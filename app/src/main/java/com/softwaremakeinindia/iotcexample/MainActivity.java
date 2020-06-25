@@ -51,8 +51,13 @@ public class MainActivity extends AppCompatActivity {
 
 
         String[] devicesToSubscribe = {"device"};
-        Iotc.connect(MainActivity.this, "key", devicesToSubscribe, new Iotc.OnConnect() {
-            private String TAG;
+        Iotc.connect(this, "1128d346-371f-4cd0-b3d8-8e48591907cc", new Iotc.Options() {
+            @Override
+            public void onConnect(String appName, String[] devices) {
+                for (int i = 0; i < devices.length; i++){
+                    Iotc.subscribe(devices[i]);
+                }
+            }
 
             @Override
             public void onMessageReceive(String deviceId, String msg) {
@@ -60,5 +65,6 @@ public class MainActivity extends AppCompatActivity {
                 adapter.notifyDataSetChanged();
             }
         });
+
     }
 }

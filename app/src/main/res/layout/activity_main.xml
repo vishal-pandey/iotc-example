@@ -61,18 +61,6 @@
             android:text="Clear"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
-
-
-        <!--<EditText-->
-            <!--android:id="@+id/edittext"-->
-            <!--android:layout_width="fill_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_below="@+id/message_list"-->
-            <!--android:layout_alignLeft="@+id/button"-->
-            <!--android:layout_marginTop="61dp"-->
-            <!--android:ems="10"-->
-            <!--android:inputType="text"-->
-            <!--android:autofillHints="" />-->
     </LinearLayout>
 
 </RelativeLayout>
